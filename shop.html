@@ -12,7 +12,7 @@
   </head>
   <body>
     <section id="header">
-      <a href="#"><img src="img/logo.png" alt="" /></a>
+      <a href="#"><img src="img/logo.jpg" width="190px" height="50px" alt="" /></a>
 
       <div>
         <ul id="navbar">
@@ -41,27 +41,12 @@
     <section id="product1" class="section-p1">
 
       <div class="pro-container">
-        <div class="pro" onclick="window.location.href='sproduct.html';">
-          <img src="img/Products/f1.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronauts T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+        <!-- Example product card -->
         <div class="pro">
-          <img src="img/Products/f2.jpg" alt="" />
+          <img src="img/Products/f1.jpg" alt="Cartoon Astronaut T-Shirts" />
           <div class="des">
             <span>adidas</span>
-            <h5>Cartoon Astronauts T-Shirts</h5>
+            <h5>Cartoon Astronaut T-Shirts</h5>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -71,10 +56,13 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f1', 'Cartoon Astronaut T-Shirts', 78, 'img/Products/f1.jpg')">
+            Add to Cart
+          </button>
         </div>
+        
         <div class="pro">
-          <img src="img/Products/f3.jpg" alt="" />
+          <img src="img/Products/f2.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -85,12 +73,16 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$102</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f2', 'Cartoon Astronauts T-Shirts', 102, 'img/Products/f2.jpg')">
+            Add to Cart
+          </button>
         </div>
+        
+        <!-- Repeat for other products -->
         <div class="pro">
-          <img src="img/Products/f4.jpg" alt="" />
+          <img src="img/Products/f3.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -101,77 +93,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$99</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <div class="pro">
-          <img src="img/Products/f5.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronauts T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <div class="pro">
-          <img src="img/Products/f6.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronauts T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <div class="pro">
-          <img src="img/Products/f7.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronauts T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <div class="pro">
-          <img src="img/Products/f8.jpg" alt="" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronauts T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f3', 'Cartoon Astronauts T-Shirts', 99, 'img/Products/f3.jpg')">
+            Add to Cart
+          </button>
         </div>
 
         <div class="pro">
-          <img src="img/Products/n1.jpg" alt="" />
+          <img src="img/Products/f4.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -182,12 +112,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$50</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f4', 'Cartoon Astronauts T-Shirts', 50, 'img/Products/f4.jpg')">
+            Add to Cart
+          </button>
         </div>
+
         <div class="pro">
-          <img src="img/Products/n2.jpg" alt="" />
+          <img src="img/Products/f5.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -198,12 +131,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$69</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f5', 'Cartoon Astronauts T-Shirts', 69, 'img/Products/f5.jpg')">
+            Add to Cart
+          </button>
         </div>
+
         <div class="pro">
-          <img src="img/Products/n3.jpg" alt="" />
+          <img src="img/Products/f6.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -214,12 +150,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$95</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f6', 'Cartoon Astronauts T-Shirts', 95, 'img/Products/f6.jpg')">
+            Add to Cart
+          </button>
         </div>
+
         <div class="pro">
-          <img src="img/Products/n4.jpg" alt="" />
+          <img src="img/Products/f7.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -230,12 +169,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$150</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f7', 'Cartoon Astronauts T-Shirts', 150, 'img/Products/f7.jpg')">
+            Add to Cart
+          </button>
         </div>
+
         <div class="pro">
-          <img src="img/Products/n5.jpg" alt="" />
+          <img src="img/Products/f8.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -246,12 +188,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$120</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('f8', 'Cartoon Astronauts T-Shirts', 120, 'img/Products/f8.jpg')">
+            Add to Cart
+          </button>
         </div>
+
         <div class="pro">
-          <img src="img/Products/n6.jpg" alt="" />
+          <img src="img/Products/n1.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -262,12 +207,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$67</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('n1', 'Cartoon Astronauts T-Shirts', 67, 'img/Products/n1.jpg')">
+            Add to Cart
+          </button>
         </div>
+
         <div class="pro">
-          <img src="img/Products/n7.jpg" alt="" />
+          <img src="img/Products/n2.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -278,12 +226,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$43</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('n2', 'Cartoon Astronauts T-Shirts', 43, 'img/Products/n2.jpg')">
+            Add to Cart
+          </button>
         </div>
+
         <div class="pro">
-          <img src="img/Products/n8.jpg" alt="" />
+          <img src="img/Products/n3.jpg" alt="Cartoon Astronauts T-Shirts" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronauts T-Shirts</h5>
@@ -294,10 +245,108 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>$56</h4>
           </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="cart" onclick="addToCart('n3', 'Cartoon Astronauts T-Shirts', 56, 'img/Products/n3.jpg')">
+            Add to Cart
+          </button>
         </div>
+
+        <div class="pro">
+          <img src="img/Products/n4.jpg" alt="Cartoon Astronauts T-Shirts" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronauts T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$47</h4>
+          </div>
+          <button class="cart" onclick="addToCart('n4', 'Cartoon Astronauts T-Shirts', 47, 'img/Products/n4.jpg')">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="pro">
+          <img src="img/Products/n5.jpg" alt="Cartoon Astronauts T-Shirts" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronauts T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$89</h4>
+          </div>
+          <button class="cart" onclick="addToCart('n5', 'Cartoon Astronauts T-Shirts', 89, 'img/Products/n5.jpg')">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="pro">
+          <img src="img/Products/n6.jpg" alt="Cartoon Astronauts T-Shirts" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronauts T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$90</h4>
+          </div>
+          <button class="cart" onclick="addToCart('n6', 'Cartoon Astronauts T-Shirts', 90, 'img/Products/n6.jpg')">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="pro">
+          <img src="img/Products/n7.jpg" alt="Cartoon Astronauts T-Shirts" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronauts T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$101</h4>
+          </div>
+          <button class="cart" onclick="addToCart('n7', 'Cartoon Astronauts T-Shirts', 101, 'img/Products/n7.jpg')">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="pro">
+          <img src="img/Products/n8.jpg" alt="Cartoon Astronauts T-Shirts" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronauts T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$200</h4>
+          </div>
+          <button class="cart" onclick="addToCart('n8', 'Cartoon Astronauts T-Shirts', 200, 'img/Products/n8.jpg')">
+            Add to Cart
+          </button>
+        </div>
+
       </div>
     </section>
 
@@ -373,7 +422,7 @@
       <div class="copyright">
         <p>Made with love &#9829;
           <br>
-          &#169 copyright 1996-2025 cara.in</p>
+          &#169 copyright 2025 bytecart.in</p>
       </div>
     </footer>
 

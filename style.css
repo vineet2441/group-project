@@ -505,6 +505,26 @@ footer .copyright{
   font-size: 16px;
   font-weight: 600;
 }
+#product1 .pro .cart {
+  width: auto; /* Adjust width for button text */
+  height: auto; /* Adjust height for button text */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #088178; /* Button background color */
+  color: white; /* Button text color */
+  font-weight: 600; /* Bold text */
+  font-size: 14px; /* Font size */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: 0.3s ease; /* Smooth hover effect */
+  position: relative; /* Ensure proper positioning */
+  bottom: 0; /* Adjust position */
+  right: 0; /* Adjust position */
+}
+
+#product1 .pro .cart:hover {
+  background-color: #065f56; /* Darker green on hover */
+}
 
 /* Single Product */
 
