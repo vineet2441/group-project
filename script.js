@@ -1,14 +1,14 @@
-// Initialize cart from localStorage or as an empty array
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Function to save cart to localStorage
+
 function saveCartToLocalStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// Function to add an item to the cart
+
 function addToCart(productId, productName, productPrice, productImage) {
-  // Ensure productPrice is a valid number
+  
   productPrice = parseFloat(productPrice);
   if (isNaN(productPrice) || productPrice <= 0) {
     console.error(`Invalid price for product: ${productName}`);
@@ -24,18 +24,18 @@ function addToCart(productId, productName, productPrice, productImage) {
     cart.push({
       id: productId,
       name: productName,
-      price: productPrice, // Ensure price is stored as a number
+      price: productPrice, 
       image: productImage,
       quantity: 1,
     });
   }
 
-  saveCartToLocalStorage(); // Save updated cart to localStorage
-  alert(`${productName} has been added to the cart!`); // Notify the user
-  console.log("Cart after adding item:", cart); // Debugging log
+  saveCartToLocalStorage(); 
+  alert(`${productName} has been added to the cart!`); 
+  console.log("Cart after adding item:", cart); 
 }
 
-// Function to update the cart table
+
 function updateCartTable() {
   const cartTableBody = document.querySelector("#cart tbody");
   const subtotalElement = document.getElementById("subtotal");
@@ -43,17 +43,17 @@ function updateCartTable() {
 
   if (!cartTableBody || !subtotalElement || !totalElement) {
     console.error("Cart table elements not found on this page.");
-    return; // Exit if cart table elements are not present (e.g., on non-cart pages)
+    return; 
   }
 
-  cartTableBody.innerHTML = ""; // Clear existing rows
+  cartTableBody.innerHTML = "";
   let subtotal = 0;
 
   cart.forEach(item => {
-    // Ensure item.price is a valid number
+    
     if (isNaN(item.price)) {
       console.error(`Invalid price for item: ${item.name}`, item);
-      return; // Skip items with invalid prices
+      return; 
     }
 
     const row = document.createElement("tr");
@@ -73,30 +73,30 @@ function updateCartTable() {
 
   subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
   totalElement.textContent = `$${subtotal.toFixed(2)}`;
-  console.log("Cart table updated:", cart); // Debugging log
+  console.log("Cart table updated:", cart); 
 }
 
-// Function to update item quantity
+
 function updateQuantity(productId, quantity) {
   const item = cart.find(item => item.id === productId);
   if (item) {
     item.quantity = parseInt(quantity, 10);
     if (isNaN(item.quantity) || item.quantity <= 0) {
-      item.quantity = 1; // Default to 1 if invalid quantity
+      item.quantity = 1; 
     }
-    saveCartToLocalStorage(); // Save updated cart to localStorage
+    saveCartToLocalStorage(); 
     updateCartTable();
   }
 }
 
-// Function to remove an item from the cart
+
 function removeFromCart(productId) {
   cart = cart.filter(item => item.id !== productId);
-  saveCartToLocalStorage(); // Save updated cart to localStorage
+  saveCartToLocalStorage(); 
   updateCartTable();
 }
 
-// Initialize the cart table on page load (only if on cart.html)
+
 document.addEventListener("DOMContentLoaded", () => {
   const isCartPage = window.location.pathname.includes("cart.html");
   if (isCartPage) {
@@ -104,3 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCartTable();
   }
 });
+
+
+
+
